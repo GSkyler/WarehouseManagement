@@ -1,0 +1,9 @@
+abc : 2
+a a a a b b b : 2
+a a : 1
+ aasd : 3
+a a b b b : 1
+asd : 0
+d : 1
+ d : 1
+d d d : 1

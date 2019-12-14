@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="warehousemanagement.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="14.0" layoutY="14.0" onAction="#undoAction" prefHeight="30.0" prefWidth="69.0" text="Undo">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Label fx:id="dateOfFileLabel" layoutX="14.0" layoutY="54.0" minHeight="16" minWidth="69" prefHeight="25.0" prefWidth="225.0">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ListView fx:id="barcodeListView" layoutX="14.0" layoutY="90.0" prefHeight="457.0" prefWidth="590.0" />
+      <TextField fx:id="barcodeInputTF" layoutX="105.0" layoutY="14.0" onKeyPressed="#handleTextFieldKeyPress" promptText="Barcode">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="addBarcodeCheckBox" disable="true" layoutX="287.0" layoutY="12.0" mnemonicParsing="false" onAction="#toggleInputFunction" prefHeight="30.0" prefWidth="144.0" selected="true" text="Add Barcode">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="removeBarcodeCheckBox" layoutX="287.0" layoutY="51.0" mnemonicParsing="false" onAction="#toggleInputFunction" prefHeight="30.0" prefWidth="144.0" text="Remove Barcode">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+    </children>
+</AnchorPane>
