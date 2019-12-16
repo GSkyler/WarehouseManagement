@@ -1,9 +1,7 @@
-abc : 2
-a a a a b b b : 2
-a a : 1
- aasd : 3
-a a b b b : 1
-asd : 0
-d : 1
- d : 1
-d d d : 1
+abc ~ 2
+a ~ 3
+s ~ 3
+d ~ 3
+a:a ~ 1
+a : a;aSd::; ~ 1
+a::As :a a : 1 ASD; ~ 1
