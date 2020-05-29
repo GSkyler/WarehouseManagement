@@ -42,7 +42,7 @@ public class Barcode {
     }
             
     public String getInfo(){
-        String output = barcodeID + " ~ " + numScanned;
+        String output = barcodeID + " , " + numScanned;
         return output;
     }
 }
