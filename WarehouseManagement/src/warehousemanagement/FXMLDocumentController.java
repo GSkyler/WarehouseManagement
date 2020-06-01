@@ -211,8 +211,14 @@ public class FXMLDocumentController implements Initializable {
             while(fileToRead.hasNextLine()){
                 String line = fileToRead.nextLine();
                 System.out.println(line);
-                int numScanned = Integer.parseInt(line.substring(line.indexOf(",")+2));
-                String barcode = line.substring(0, (line.indexOf(",")-1));
+                if(line.indexOf(",") >= 0){
+                    int numScanned = Integer.parseInt(line.substring(line.indexOf(",")+2));
+                    String barcode = line.substring(0, (line.indexOf(",")-1));
+                }
+                else{
+                    int numScanned = Integer.parseInt(line.substring(line.indexOf("~")+2));
+                    String barcode = line.substring(0, (line.indexOf("~")-1));
+                }
                 Barcode newBarcode = new Barcode(barcode);
                 newBarcode.setNumScanned(numScanned);
                 barcodesArrayList.add(newBarcode);
